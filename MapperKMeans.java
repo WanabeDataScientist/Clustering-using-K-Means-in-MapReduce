@@ -11,7 +11,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class MapperforKMeans extends
+public class MapperKMeans extends
 		Mapper<LongWritable, Text, LongWritable, Text> {
 	int noOfClusters;
 	int dataPoints;
