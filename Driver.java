@@ -39,15 +39,15 @@ public class Driver {
 			job.setJarByClass(DriverforKMeans.class);
 
 			// Setting the Mapper class
-			job.setMapperClass(MapperforKMeans.class);
+			job.setMapperClass(MapperKMeans.class);
 			// Setting the Reducer Class
-			job.setReducerClass(ReducerforKMeans.class);
+			job.setReducerClass(ReducerKMeans.class);
 			// Setting the output key type and value type for the Mapper
 			job.setMapOutputKeyClass(LongWritable.class);
 			job.setMapOutputValueClass(Text.class);
 
 			// Setting the partitioner class
-			job.setPartitionerClass(KMeansPartitioner.class);
+			job.setPartitionerClass(PartitionerKMeans.class);
 
 			job.setInputFormatClass(TextInputFormat.class);
 			// job.setOutputFormatClass(TextOutputFormat.class);
