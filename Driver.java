@@ -18,7 +18,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class DriverforKMeans {
+public class Driver {
 	// static enum MoreIterations {TOTALITERATIONS}
 	static enum MoreIterations {
 		numberOfIterations
